@@ -51,6 +51,14 @@ function App() {
         });
       });
 
+      //Get discover weekly fees
+      spotify.getPlaylist('37i9dQZF1EppgeGU61UusU').then(response=> {
+        dispatch({
+          type:'SET_DISCOVER_WEEKLY',
+          discover_weekly: response,
+        });
+      });
+
     }
 
   }, [token, dispatch]);

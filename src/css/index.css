@@ -1,6 +1,10 @@
 *{
   margin: 0;
 }
+/* removing scroll bar */
+body::-webkit-scrollbar{
+  display: none;
+}
 
 body {
   margin: 0;
